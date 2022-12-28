@@ -1,0 +1,69 @@
+.gift-block {
+    width: 100%;
+    margin-top: 45px;
+}
+
+.gift-block__title {
+    margin-bottom: 25px;
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.gift-block__img {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.gift-block__city-btn {
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+
+.gift-block__city-btn a {
+    padding: 0 10px;
+    margin: 0 5px;
+    margin-bottom: var(--space-size);
+    border-radius: 15px;
+
+    font-size: 0.75rem;
+    line-height: 2em;
+
+    color: var(--color-text);
+    background-color: #EED7D8;
+
+}
+
+.mb-hite {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .gift-block {
+        width: 48.4%;
+        margin: auto;
+        /* margin-top: 45px; */
+        /* змінила, перевірити ще раз */
+        margin-top: 135px;
+        text-align: center;
+    }
+
+    .gift-block__img {
+        width: 80%;
+    }
+
+    .gift-block__city-btn a {
+        font-size: 1rem;
+        line-height: 1.64em;
+    }
+
+    .mb-hite {
+        display: block;
+    }
+}
