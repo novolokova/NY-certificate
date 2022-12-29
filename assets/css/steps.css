@@ -1,0 +1,129 @@
+.steps {
+    padding: var(--space-size);
+    padding-bottom: 80px;
+    background-color: var(--color-light);
+    color: var(--color-text);
+}
+
+.steps__article {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.steps__title {
+    font-size: 1.375rem;
+    line-height: 1.219em;
+    font-weight: 700;
+}
+
+.steps__article>p,
+.block__article>p {
+    line-height: 1.625rem;
+
+}
+
+.steps__block {
+    margin-bottom: 40px;
+    border: 8px solid;
+    border-radius: 25px;
+    border-image: url(./../bg-images/border-1step-mb.png) 10;
+
+}
+
+.steps>div:nth-child(3) {
+    border-image: url(./../bg-images/border-2step-mb.png) 10;
+}
+
+.steps>div:nth-child(5) {
+    margin-bottom: 60px;
+}
+
+.block__img {
+    width: 27%;
+    padding: 17px 19px 15px 19px;
+    margin-top: 42px;
+    margin-left: 20px;
+
+    border-radius: 15px;
+    background-color: var(--color-main);
+    box-shadow: 0px 10px 25px -2px #ed1c248c;
+}
+
+.block__article {
+    padding: 25px 20px 45px 20px;
+}
+
+.block__article h2 {
+    font-size: 1.25rem;
+    line-height: 1.75em;
+    font-weight: 700;
+}
+
+@media (min-width: 576px) {
+    .steps {
+        text-align: center;
+    }
+
+    .steps__article>p,
+    .block__article>p {
+        font-size: 0.91rem;
+    }
+
+    .block__article h2 {
+        font-size: 1.36rem;
+        line-height: 1.16em;
+    }
+
+    .steps__block {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+    .steps__block,
+    .steps>div:nth-child(3) {
+        border-image: url(./../bg-images/border-dt.png) 10;
+    }
+
+    .block__img {
+        width: 100px;
+        height: 100px;
+        margin: 10%;
+    }
+
+    .block__article {
+        width: 70%;
+    }
+}
+
+@media (min-width: 992px) {
+    .steps {
+        background-color: var(--color-light);
+        background-image: url(./../bg-images/steps-bg-dt.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .steps__title {
+        font-size: 2.363rem;
+        line-height: 1.211em;
+    }
+
+    .steps__block {
+        width: 61%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .block__img {
+        width: 115px;
+        height: 115px;
+        margin: 60px 60px 60px 70px;
+    }
+
+    .block__article {
+        width: 100%;
+        padding-top: 60px;
+       
+    }
+}
