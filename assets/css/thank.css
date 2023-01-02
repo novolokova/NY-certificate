@@ -1,0 +1,171 @@
+.thank {
+    background-color: var(--color-main);
+    background-image: url(./../bg-images/thank-bg-mb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--color-light);
+    padding-bottom: 3%;
+}
+
+.logo {
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.thank__article {
+    padding: var(--space-size);
+    margin-top: 10%;
+}
+
+.thank__heading {
+    font-size: 2.25rem;
+    line-height: 1.22;
+}
+
+.thank__article p {
+    padding-top: 0.7rem;
+    padding-right: 2rem;
+    font-weight: 400;
+}
+
+.thank__article strong {
+    font-weight: 600;
+}
+
+.thank__btn-mb {
+    max-width: 300px;
+    padding-top: 22%;
+}
+
+.btn {
+    background-color: var(--color-light);
+    color: var(--color-main);
+}
+
+.btn__img {
+    width: 2em;
+    margin-right: 2%;
+}
+
+.thank__btn-dt {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .thank {
+        background-image: url(./../bg-images/thank-bg-dt.png);
+        background-position: right;
+    }
+
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .thank__article {
+        width: 73%;
+        margin-top: 8%;
+        margin-left: 2%;
+    }
+
+    br {
+        display: none;
+    }
+
+    .thank__btn-mb {
+        padding-top: 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .logo {
+        width: 98px;
+        height: 98px;
+    }
+
+    .thank__article {
+        width: 60%;
+        margin-top: 6%;
+    }
+
+    .thank__btn-mb {
+        padding-top: 15%;
+    }
+}
+
+@media (min-width: 992px) {
+    .thank__article {
+        width: 70%;
+        margin-left: 4%;
+    }
+
+    .thank__heading {
+        font-size: 1.7rem;
+    }
+
+    .thank__btn-mb {
+        display: none;
+    }
+
+    .btn,
+    .btn__img {
+        background-color: var(--color-main);
+        color: var(--color-light);
+    }
+
+    .btn {
+        border: 3px solid var(--color-light);
+    }
+
+    .thank__btn-dt {
+        display: inline-block;
+        width: 100%;
+        padding-top: 11%;
+    }
+
+    .btn {
+        font-size: 0.819rem;
+        max-width: 480px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .thank__article {
+        margin-left: 5%;
+    }
+}
+
+@media (min-width: 1800px) {
+    .thank {
+        height: 80vh;
+        background-position: center;
+    }
+
+    .thank__article {
+        width: 50%;
+        margin-top: 9%;
+        margin-left: 19%;
+    }
+
+    .thank__heading {
+        font-size: 3.54rem;
+        line-height: 1.217;
+    }
+
+    .thank__article p {
+        font-size: 1.09rem;
+        line-height: 1.458;
+        padding-top: 0.7rem;
+        padding-right: 2rem;
+        font-weight: 400;
+    }
+
+    .btn {
+        font-size: initial;
+        max-width: 550px;
+    }
+}

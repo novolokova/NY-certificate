@@ -1,0 +1,146 @@
+.footer {
+    padding: 0 var(--space-size);
+    background-color: var(--color-footer);
+    color: var(--color-light);
+    text-align: center;
+}
+
+.footer__wrap {
+    padding-top: 42px;
+    margin-bottom: 50px;
+}
+
+.footer__title {
+    font-size: 2rem;
+    line-height: 3.06em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.footer__article>p {
+    line-height: 1.625em;
+}
+
+.footer__phone {
+    margin-top: 30px;
+}
+
+.footer__phone>p {
+    font-size: 1.625rem;
+    line-height: 1.92em;
+    font-weight: 700;
+}
+
+.footer>p {
+    font-size: 0.75rem;
+    line-height: 3.92em;
+}
+
+@media (min-width: 576px) {
+    .footer {
+        padding: 0;
+    }
+
+    .footer__wrap {
+        padding-top: 7.4%;
+        margin: 0 8%;
+        padding-bottom: 3.5%;
+    }
+
+    .footer__article {
+        display: inline-block;
+        width: 45%;
+    }
+
+    .footer__article,
+    .footer>p {
+        text-align: initial;
+    }
+
+    .footer__title {
+        font-size: 1.5rem;
+        line-height: 1.75em;
+    }
+
+    .footer__article>p {
+        line-height: 1.625em;
+    }
+
+    .footer__phone {
+        display: inline-block;
+        width: 45%;
+        margin-top: 0;
+
+    }
+
+    .footer__phone>p {
+        font-size: 1.25rem;
+        line-height: 1.92em;
+        font-weight: 700;
+    }
+
+    .footer>p {
+        padding-left: 15%;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer>p {
+        font-size: 0.63rem;
+        line-height: 3.92em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .footer__wrap {
+        margin: 0 13%;
+
+    }
+
+    .footer__title {
+        font-size: 2.1rem;
+        line-height: 1.55em;
+    }
+
+    .footer__article>p {
+        font-size: 0.88rem;
+        line-height: 1.8em;
+    }
+
+    .footer__phone>p {
+        font-size: 1.3rem;
+        line-height: 1.27em;
+    }
+
+    .footer>p {
+        font-size: 0.72rem;
+        line-height: 2.92em;
+    }
+}
+
+@media (min-width: 1800px) {
+    .footer__wrap {
+        padding-top: 7.4%;
+        margin: 0 17%;
+        padding-bottom: 3.5%;
+    }
+
+    .footer__title {
+        font-size: 2.86rem;
+        line-height: 1.55em;
+    }
+
+    .footer__article>p {
+        font-size: 1.18rem;
+        line-height: 1.8em;
+    }
+
+    .footer__phone>p {
+        font-size: 2.36rem;
+        line-height: 1.26em;
+    }
+
+    .footer>p {
+        padding-left: 20%;
+    }
+
+}

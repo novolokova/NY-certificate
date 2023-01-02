@@ -1,0 +1,138 @@
+.promo {
+    background-color: var(--color-main);
+    background-image: url(/assets/bg-images/promo-bg-mb.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.promo__img {
+    width: 63%;
+    margin: auto;
+    padding-top: 34%;
+}
+
+.promo__article {
+    padding: var(--space-size);
+    padding-top: 2.5rem;
+    padding-bottom: 3.75rem;
+    color: var(--color-light);
+}
+
+.promo__title {
+    font-size: 2rem;
+    line-height: 1.219em;
+    font-weight: 700;
+}
+
+.promo__article>p,
+.promo__block>p {
+    font-size: 1rem;
+    line-height: 1.75em;
+    font-weight: 500;
+}
+
+.promo__block {
+    padding: 50px 30px 40px 30px;
+    border-radius: 15px;
+    margin-top: 50px;
+    background-color: var(--color-light);
+    text-align: center;
+}
+
+.promo-sale-img {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.promo__block>p {
+    padding: 30px 0;
+    color: var(--color-text);
+}
+
+@media (min-width: 576px) {
+    .promo__article {
+        padding: 2.5rem;
+    }
+
+    .promo__article>p,
+    .promo__block>p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .promo__img {
+        display: none;
+    }
+
+    .promo {
+        display: flex;
+        justify-content: end;
+        background-color: var(--color-main);
+        background-image: url(./../bg-images/promo-bg-dt.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .promo__article {
+        width: 50%;
+        padding-top: 1.5rem;
+        padding-bottom: 2.75rem;
+        margin-right: 30px;
+    }
+
+    .promo__article>p,
+    .promo__block>p {
+        font-size: 0.9rem;
+    }
+
+    .promo__block {
+        padding: 20px 10px 20px 10px;
+        border-radius: 15px;
+        margin-top: 15px;
+        background-color: var(--color-light);
+        text-align: center;
+    }
+}
+
+@media (min-width: 1400px) {
+    .promo__article {
+        width: 45%;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 100px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .promo__article {
+        width: 30%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 375px;
+    }
+
+    .promo__title {
+        font-size: 2.36rem;
+        line-height: 1.211em;
+    }
+
+    .promo__article>p {
+        font-size: 0.9rem;
+        line-height: 1.75em;
+    }
+
+    .promo__block {
+        margin-top: 30px;
+        border-radius: 26px;
+    }
+
+    .promo__block>p {
+        padding-left: 80px;
+        padding-right: 80px;
+        font-size: 0.727rem;
+        line-height: 1.75em;
+        text-align: center;
+    }
+}
