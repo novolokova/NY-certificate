@@ -1,16 +1,18 @@
-footer {
-    position: relative;
-    padding: var(--space-size);
-    padding-top: 16%;
-    padding-bottom: 20%;
+.footer {
+    padding: 0 var(--space-size);
     background-color: var(--color-footer);
     color: var(--color-light);
     text-align: center;
 }
 
+.footer__wrap {
+    padding-top: 42px;
+    margin-bottom: 50px;
+}
+
 .footer__title {
     font-size: 2rem;
-    line-height: 2.06em;
+    line-height: 3.06em;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -19,40 +21,39 @@ footer {
 }
 
 .footer__phone {
-    padding-left: 15px;
     margin-top: 30px;
+}
+
+.footer__phone>p {
     font-size: 1.625rem;
     line-height: 1.92em;
     font-weight: 700;
 }
 
-footer>p {
-    position: absolute;
-    bottom: 2%;
-    left: 25%;
+.footer>p {
     font-size: 0.75rem;
     line-height: 3.92em;
 }
 
-footer::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: rgba(153, 22, 22, 0.562);
-    position: absolute;
-    bottom: 15.5%;
-    left: 0;
-}
-
 @media (min-width: 576px) {
-    footer {
-        padding-top: 10%;
-        padding-bottom: 15%;
+    .footer {
+        padding: 0;
+    }
+
+    .footer__wrap {
+        padding-top: 7.4%;
+        margin: 0 8%;
+        padding-bottom: 3.5%;
     }
 
     .footer__article {
         display: inline-block;
         width: 45%;
+    }
+
+    .footer__article,
+    .footer>p {
+        text-align: initial;
     }
 
     .footer__title {
@@ -66,30 +67,33 @@ footer::after {
 
     .footer__phone {
         display: inline-block;
-        width: 50%;
-        padding-left: 15px;
+        width: 45%;
         margin-top: 0;
+
+    }
+
+    .footer__phone>p {
         font-size: 1.25rem;
         line-height: 1.92em;
         font-weight: 700;
     }
 
-    footer>p {
-        left: 10%;
+    .footer>p {
+        padding-left: 15%;
     }
 }
 
 @media (min-width: 992px) {
-    footer>p {
+    .footer>p {
         font-size: 0.63rem;
         line-height: 3.92em;
     }
 }
 
 @media (min-width: 1200px) {
-    footer {
-        padding-top: 7%;
-        padding-bottom: 12%;
+    .footer__wrap {
+        margin: 0 13%;
+
     }
 
     .footer__title {
@@ -102,20 +106,24 @@ footer::after {
         line-height: 1.8em;
     }
 
-    .footer__phone {
+    .footer__phone>p {
         font-size: 1.3rem;
         line-height: 1.27em;
     }
 
-    footer>p {
-        left: 17%;
-        bottom: 4%;
+    .footer>p {
         font-size: 0.72rem;
         line-height: 2.92em;
     }
 }
 
 @media (min-width: 1800px) {
+    .footer__wrap {
+        padding-top: 7.4%;
+        margin: 0 17%;
+        padding-bottom: 3.5%;
+    }
+
     .footer__title {
         font-size: 2.86rem;
         line-height: 1.55em;
@@ -126,9 +134,13 @@ footer::after {
         line-height: 1.8em;
     }
 
-    .footer__phone {
+    .footer__phone>p {
         font-size: 2.36rem;
-        line-height: 1.27em;
+        line-height: 1.26em;
+    }
+
+    .footer>p {
+        padding-left: 20%;
     }
 
 }

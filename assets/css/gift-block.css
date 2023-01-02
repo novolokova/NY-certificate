@@ -1,4 +1,5 @@
 .gift-block {
+    position: relative;
     width: 100%;
     margin-top: 45px;
 }
@@ -11,10 +12,46 @@
 }
 
 .gift-block__img {
+    position: relative;
     margin-bottom: 20px;
     border-radius: 15px;
     box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
 }
+
+.gift-block__img__wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.gift-block__img__wrapper::before,
+.gift-block__img__wrapper::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.gift-block__img__wrapper::before {
+    background-image: url(/assets/images/arrow-left-img.svg);
+    left: 5%;
+}
+
+.gift-block__img__wrapper::after {
+    background-image: url(/assets/images/arrow-right-img.svg);
+    right: 5%;
+}
+
+.gift-block__img__wrapper:hover::after,
+.gift-block__img__wrapper:hover::before {
+    opacity: 1;
+}
+
 
 .gift-block__city-btn {
     display: flex;
@@ -23,7 +60,6 @@
     align-items: center;
     text-align: center;
     flex-wrap: wrap;
-
 }
 
 .gift-block__city-btn a {
@@ -37,7 +73,6 @@
 
     color: var(--color-text);
     background-color: #EED7D8;
-
 }
 
 .mb-hite {
@@ -46,16 +81,31 @@
 
 @media (min-width: 992px) {
     .gift-block {
-        width: 48.4%;
+        width: 65%;
         margin: auto;
-        /* margin-top: 45px; */
-        /* змінила, перевірити ще раз */
         margin-top: 135px;
         text-align: center;
     }
 
     .gift-block__img {
         width: 80%;
+    }
+
+    .gift-block__img__wrapper::before,
+    .gift-block__img__wrapper::after {
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+        opacity: 0;
+        transition: opacity 1.5s 0.3s;
+    }
+
+    .gift-block__img__wrapper::before {
+        left: 13%;
+    }
+
+    .gift-block__img__wrapper::after {
+        right: 13%;
     }
 
     .gift-block__city-btn a {
@@ -65,5 +115,11 @@
 
     .mb-hite {
         display: block;
+    }
+}
+
+@media (min-width: 1400px) {
+    .gift-block {
+        width: 48.4%;
     }
 }

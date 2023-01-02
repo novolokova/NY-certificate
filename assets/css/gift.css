@@ -33,15 +33,7 @@
     text-align: center;
 }
 
-/*    ????????   */
-@media (min-width: 576px) {}
-
-
-
-
-
 @media (min-width: 992px) {
-
     .gift {
         padding-bottom: 195px;
 
@@ -52,28 +44,40 @@
     }
 
     .gift__article {
-        width: 50.5%;
+        width: 65%;
         margin: auto;
     }
 
     .gift__img {
-        width: 303px;
+        width: 250px;
     }
 
-    /* взяли от (root font-size: 22px)--@media (min-width: 992px) */
     .gift__title {
-        font-size: 2.81rem;
-        /*62px/22px -- rem*/
+        font-size: 1.9rem;
         line-height: 1.22em;
-        /*76px/62px -- em*/
-
     }
 
     .gift__article p {
-        /* (root font-size: 22px)--@media (min-width: 992px) */
-        font-size: 1rem;
-        /* 35px/22px */
+        font-size: 0.85rem;
         line-height: 1.59em;
+    }
+}
 
+@media (min-width: 1400px) {
+    .gift__article {
+        width: 48.4%;
+        margin: auto;
+    }
+
+    .gift__img {
+        width: 300px;
+    }
+
+    .gift__title {
+        font-size: 2.81rem;
+    }
+
+    .gift__article p {
+        font-size: 1rem;
     }
 }

@@ -1,8 +1,15 @@
 .promo {
     background-color: var(--color-main);
+    background-image: url(/assets/bg-images/promo-bg-mb.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.promo-img {}
+.promo__img {
+    width: 63%;
+    margin: auto;
+    padding-top: 34%;
+}
 
 .promo__article {
     padding: var(--space-size);
@@ -52,11 +59,10 @@
     .promo__block>p {
         font-size: 1rem;
     }
-
 }
 
 @media (min-width: 992px) {
-    .promo-img {
+    .promo__img {
         display: none;
     }
 
@@ -91,19 +97,6 @@
 }
 
 @media (min-width: 1400px) {
-    .promo-img {
-        display: none;
-    }
-
-    .promo {
-        display: flex;
-        justify-content: end;
-        background-color: var(--color-main);
-        background-image: url(./../bg-images/promo-bg-dt.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-    }
-
     .promo__article {
         width: 45%;
         margin-top: 0;
@@ -113,20 +106,6 @@
 }
 
 @media (min-width: 1920px) {
-    .promo-img {
-        display: none;
-    }
-
-    .promo {
-        display: flex;
-        justify-content: end;
-        background-color: var(--color-main);
-        background-image: url(./../bg-images/promo-bg-dt.png);
-        background-repeat: no-repeat;
-        background-size: contain;
-
-    }
-
     .promo__article {
         width: 30%;
         margin-top: 100px;
