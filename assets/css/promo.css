@@ -1,6 +1,6 @@
 .promo {
     background-color: var(--color-main);
-    background-image: url(/assets/bg-images/promo-bg-mb.png);
+    background-image: url(./../bg-images/promo-bg-mb.png);
     background-repeat: no-repeat;
     background-size: contain;
 }

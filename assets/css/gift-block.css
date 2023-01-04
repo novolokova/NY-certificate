@@ -38,12 +38,12 @@
 }
 
 .gift-block__img__wrapper::before {
-    background-image: url(/assets/images/arrow-left-img.svg);
+    background-image: url(./../images/arrow-left-img.svg);
     left: 5%;
 }
 
 .gift-block__img__wrapper::after {
-    background-image: url(/assets/images/arrow-right-img.svg);
+    background-image: url(./../images/arrow-right-img.svg);
     right: 5%;
 }
 
